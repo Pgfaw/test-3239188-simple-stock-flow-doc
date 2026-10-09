@@ -1,0 +1,14 @@
+#01 context 
+
+simple stock flow es un sistea de gestion backen 
+
+alcance del sistema 
+-revisar e informar usuario de operarios 
+-registro interno de producto
+-nombre, precio, 
+-vents only,cadena
+
+fuera de el
+-falta de clientes no permite canjeo de producto
+-versatil a transferencia 
+-ventas registrada venta fijada
