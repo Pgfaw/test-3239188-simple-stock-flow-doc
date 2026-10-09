@@ -1,0 +1,25 @@
+#domain
+
+#entidades del dominio
+
+producto
+-atributo: id, name, price, stock, categoryId, Iagekey, deketedAt
+-venta 
+atributo: Id, saliat, solby, soldbyuserid, itmes, seletem
+-ventaonly
+atributo: Id, producid, productname, unitprice
+-user
+atributo: id, username,admin,seller
+-category
+atributo: id, name
+
+
+#reglas del negocio
+-el numero de unidades en inventario puede ser negativa 
+-numero de stock en positivo para obtener ganacia
+-registro por venta una vez realizada
+
+#glosario
+precio
+nombre
+imagen
