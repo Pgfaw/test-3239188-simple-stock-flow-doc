@@ -1,0 +1,4 @@
+#01 context 
+
+simple stock flow es un sistea de gestion backen 
+
