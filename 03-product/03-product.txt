@@ -1,0 +1,12 @@
+#03 product
+
+cada sitio que se mobiliza con el comercio ven necesario registrar transacciones comerciales rapidas y seguras mas control de inventaio
+-debilidad en el stock
+-deficiencia de trazabilidad de venta
+-reporte ante cambios de precio o referencia
+
+vision y valor 
+-simple stock es una solucion liviana y solid tha gestion sell e intenteri deiseñ daw the folowing key
+-history freeze each sell register a made comercity consumed and remenber a change in the price that catalog
+-system money inventary Without multi-currency complexities
+ 
