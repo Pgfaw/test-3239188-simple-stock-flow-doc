@@ -11,3 +11,4 @@ alcance del sistema
 fuera de el
 -falta de clientes no permite canjeo de producto
 -versatil a transferencia 
+-ventas registrada venta fijada
