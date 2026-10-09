@@ -1,0 +1,22 @@
+#arquitectura #05 y cierre
+
+estilo y componentes
+- arquitectura hexagonal (puertos y adaptadores) [data-model.md §2.5, §12].
+- nombres singulares en tablas de BD (category, product, sale, sale_item, user) dentro del esquema sales [data-model.md §0, §3].
+
+agregados
+- product: raiz de catalogo, maneja price > 0, stock >= 0 y baja logica [data-model.md §2.2].
+- sale: raiz de ventas, contiene sus sale_item, garantiza atonicidad en inventario y congelamiento de datos [data-model.md §2.3, §2.4].
+- user: raiz de usuarios, normaliza minúsculas y valida roles [data-model.md §2.5].
+- category: entidad fija de solo lectura (5 filas sembradas) [data-model.md §2.1, §9.1].
+
+donde vive cada regla
+- en motor (postgres): ck_product_stock_non_negative, unicidad de username y category name, claves foraneas FK-1, FK-2 y FK-3 [data-model.md §4, §5].
+- en solo dominio (c#): no retirar mas stock del disponible, redondeo de precios, inmutabilidad de ventas y datos congelados [data-model.md §1, §2.2, §2.3, §2.4].
+
+cierre y comprobacion
+- stock >= 0 -> product.stock -> ck_product_stock_non_negative [data-model.md §4].
+- categorias -> category -> 5 filas sembradas [data-model.md §9.1].
+- lineas de venta -> sale_item -> FK_sale_item_sale_sale_id CASCADE [data-model.md §4, §5].
+- productos en venta -> sale_item -> FK_sale_item_product_product_id RESTRICT [data-model.md §4, §5].
+- baja logica -> product.deleted_at -> timestamptz [data-model.md §3].
