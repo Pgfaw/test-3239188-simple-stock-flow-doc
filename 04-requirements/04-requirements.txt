@@ -1,0 +1,23 @@
+#04 requirements 
+
+hu y rf
+
+-hu 01 verificacion de usuario
+como usuario interno -seller-admin
+quiero iniciar seson correctamente
+para acceder y resgistrar operaciones 
+
+-hu 02 catalogo del producto
+como seller vendedor  o admin administrador 
+quiero buscar productos
+para seleccionar productos y filtar por categoria
+
+-hu ventas
+como vendedor seller 
+quiero regsitar toda venta
+para registar la transferencia e designar el inventario
+
+rfn
+-registo monetario para operar como monomoneda
+-timestamptz registro de registro 
+
